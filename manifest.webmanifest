@@ -1,0 +1,17 @@
+{
+  "name": "Malawi District TA Map",
+  "short_name": "MW Map",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0f9ff",
+  "theme_color": "#0c4a6e",
+  "description": "Offline district-to-TA interactive Malawi map.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c4a6e" />
+  <title>Malawi District & TA Offline Map</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Malawi District to T/A Map</h1>
+    <p>Tap a district to view Traditional Authorities (T/As). Works offline after first load.</p>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <button id="backBtn" disabled>← Back to Districts</button>
+      <p id="statusText">District view</p>
+    </section>
+
+    <section class="map-card">
+      <svg id="malawiMap" viewBox="0 0 420 880" role="img" aria-label="Stylized interactive Malawi map">
+        <path class="country-outline" d="M170 20 L220 40 L245 95 L260 170 L280 240 L290 320 L300 390 L305 470 L290 570 L270 650 L255 730 L230 810 L190 860 L160 850 L140 790 L130 700 L120 620 L110 540 L100 470 L95 390 L100 320 L110 250 L130 180 L145 120 L160 60 Z"/>
+
+        <g id="districtLayer"></g>
+        <g id="taLayer" class="hidden"></g>
+      </svg>
+
+      <aside>
+        <h2 id="panelTitle">Districts</h2>
+        <ul id="infoList"></ul>
+      </aside>
+    </section>
+
+    <section class="tips">
+      <h3>Offline on iPhone</h3>
+      <ol>
+        <li>Open this page in Safari.</li>
+        <li>Tap Share → <strong>Add to Home Screen</strong>.</li>
+        <li>Launch from the icon; map data remains available offline.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
